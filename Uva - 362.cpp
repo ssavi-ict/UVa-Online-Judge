@@ -1,7 +1,7 @@
 #include<bits/stdc++.h>
 
 using namespace std;
-
+ 
 int main()
 {
     long long int n, a[10], i, m, j, num, num2;
