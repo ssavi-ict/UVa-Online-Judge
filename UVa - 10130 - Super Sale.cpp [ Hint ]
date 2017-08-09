@@ -1,0 +1,15 @@
+=> Problem said that you have G bags each of MAXWEIGHT[j] where j<=G. You will also be given that N items each of COST[i] and WEIGHT[i] 
+where i<=N. You need to find the maximum total cost you can earn using all G bags.
+
+=> Clearly this is a 0/1 Knapsack Problem with slight change of G bags. This can be solved by G recursive calls or iterative calls for 
+each of MAXWEIGHT[i]. But that cost too much run time.
+
+=> Instead observe you will always have the MAXWEIGHTs of bags are 30 and your requirements i.e. WEIGHT and COST of N elements won't be 
+changed.
+
+=> As the WEIGHT and COST of each item won't change run a 0/1 Knapsack approach for all N items with the bags size of 1 - 30 . The DP 
+table stores all the result for MAXIMUM TOTAL value for maximum weight MAXW ( 1 <=MAXW <= 30 ) either taking i'th item ( 1<=i<=N ) or not
+taking the i'th item.
+
+=> Now for all G maxweight bags you just access the table as TABLE[N][G] and sum them up. Thus will get your desired result and this won't
+cost much time like the naive approach.
