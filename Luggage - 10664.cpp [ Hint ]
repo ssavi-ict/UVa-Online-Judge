@@ -1,0 +1,10 @@
+=> The Basic is to check whether it is possible to divide the complete array into two equal parts. 
+
+=> Hence, it can be characterized into subset sum problem. 
+
+=> Firstly, you must observe that it's not possible to divide the array into two equal parts if the sum of the array is not even.
+
+=> If you figured out that it might be possible to divide the array into two equal part then use Dynamic Progamming i.e. 0/1 Knapsack to 
+check whether it is possible to make " Half of Total Sum ( Total Sum / 2) " . [ See Tushar Roy's Youtube Video Tutorial ]  
+
+=> If possible then print YES else Print NO .
